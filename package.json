@@ -1,0 +1,35 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Learning to use APIs. Weather forecast app from openweather API's.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanP-VT/Weather-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuanP-VT/Weather-App/issues"
+  },
+  "homepage": "https://github.com/JuanP-VT/Weather-App#readme",
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.13.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
+  }
+}
