@@ -1,0 +1,112 @@
+*{
+     /* border: 1px solid rgb(240, 236, 8);  */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
+}
+.small{
+    font-size: 0.8rem;
+}
+.big{
+    font-size: 1.4rem;
+}
+html { 
+    background: url(./img/jarand-k-lokeland-3-MftKobVtg-unsplash\ \(1\).jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  body{
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+  }
+  #main{
+      width: 100%;
+      display: flex;
+      flex-direction: column ;
+  }
+  #top{
+      width: 100%;
+      height: 700px;
+    display: flex;
+    position: relative;
+  }
+  #left{
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      left: 5px;
+      height: 100%;
+      width: 30%;
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.3);
+  }
+  #currentTemp{
+    font-size: 2.5rem;
+    margin-top: 50px;
+  }
+  #tempIcon{
+    display: flex;
+    height: 15%;
+    justify-content: center;
+    align-items: center;
+  }
+  #inputDiv{
+    position: relative;
+  }
+  #userInput{
+    padding: 5px;
+    width: 30%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: whitesmoke;
+    outline: none;
+  }
+  ::placeholder{
+    color: whitesmoke;
+    font-size: 0.8rem;
+  }
+  #lupa{
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    transform: scale(0.8);
+    color: white;
+  }
+  #right{
+    position: absolute;
+    right: 5px;
+    width: 30%;
+    height: 100%;
+    padding: 30px;
+
+  }
+  .info{
+    display: flex;
+    padding: 10px;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0.3);
+
+  }
+  .infoBox{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
+  .infoIcon{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+  }
+  #bot{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+  }

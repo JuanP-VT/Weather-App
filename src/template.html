@@ -5,8 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ForeCast</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/f6bcbfcfce.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        </style>
 </head>
 <body>
-    
+ <div id="main">
+     <div id="top">
+         <div id="left">
+             <div id="condition" class="big"> condition</div>
+             <div id="place">place</div>
+             <div id="date" class="small"> date of fetch</div>
+             <div id="currentHour" class="small"> Hour</div>
+             <div id="currentTemp" class="big"> CurrentTemp</div>
+             <div id="tempIcon"> tempIcon</div>
+            <div id="inputDiv">
+                <input type="text" id="userInput" placeholder="Search Place" class="small">
+                <i class="fa-solid fa-magnifying-glass" id="lupa"></i>
+            </div>
+         </div>
+         <div id="right">
+             <div class="info">
+                 <div id="feelsLikeIcon" class="infoIcon">ico</div>
+                 <div class="infoBox">
+                     <div class="small"> Feels Like</div>
+                     <div class="big"> 0C</div>
+                 </div>
+             </div>
+             <div class="info">
+                <div id="humidityIcon" class="infoIcon">ico</div>
+                <div class="infoBox">
+                    <div class="small">Humidity</div>
+                    <div class="big" id="humidityValue"> 0%</div>
+                </div>
+            </div>
+            <div class="info">
+                <div id="chanceOfRain" class="infoIcon">ico</div>
+                <div class="infoBox">
+                    <div class="small">Chance Of Rain</div>
+                    <div class="big" id="chanceOfRainValue"> 0%</div>
+                </div>
+            </div>
+            <div class="info">
+                <div id="windSpeed" class="infoIcon">ico</div>
+                <div class="infoBox">
+                    <div class="small">Wind Speed</div>
+                    <div class="big" id="windSpeedValue"> 0Km/Hr</div>
+                </div>
+            </div>
+         </div>
+     </div>
+     <div id="bot"></div>
+ </div>
 </body>
 </html>
