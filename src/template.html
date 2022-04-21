@@ -21,10 +21,14 @@
              <div id="currentHour" class="small"> Hour</div>
              <div id="currentTemp" class="big"> CurrentTemp</div>
              <div id="tempIcon"> tempIcon</div>
-            <div id="inputDiv">
-                <input type="text" id="userInput" placeholder="Search Place" class="small">
-                <i class="fa-solid fa-magnifying-glass" id="lupa"></i>
-            </div>
+             <form id="search">
+                <div id="inputDiv">
+                    <input type="text" id="userInput" placeholder="Search Location" class="small">
+                    <i class="fa-solid fa-magnifying-glass" id="lupa"></i>
+                </div>
+                <button class="button-85" role="button" id="submit">Search</button>
+             </form>
+          
          </div>
          <div id="right">
              <div class="info">
@@ -52,7 +56,7 @@
                 <div id="windSpeed" class="infoIcon">ico</div>
                 <div class="infoBox">
                     <div class="small">Wind Speed</div>
-                    <div class="big" id="windSpeedValue"> 0Km/Hr</div>
+                    <div class="big" id="windSpeedValue"> 0<span class="small">km/h</span></div>
                 </div>
             </div>
          </div>
