@@ -1,3 +1,5 @@
+import loadFormEvent from './loadFormEvent';
 import './style.css';
 
-console.log('hi');
+console.log('init');
+loadFormEvent();
