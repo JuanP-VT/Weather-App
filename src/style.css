@@ -1,9 +1,9 @@
 *{
-     /* border: 1px solid rgb(240, 236, 8);  */
+     border: 1px solid rgb(240, 236, 8); 
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Roboto', sans-serif;
     color: whitesmoke;
 }
@@ -14,7 +14,7 @@
     font-size: 1.4rem;
 }
 html { 
-    background: url(./img/jarand-k-lokeland-3-MftKobVtg-unsplash\ \(1\).jpg) no-repeat center center fixed; 
+    background: url(./img/marc-olivier-jodoin-MJv31qXqSOU-unsplash.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -44,7 +44,8 @@ html {
       height: 100%;
       width: 30%;
       padding: 30px;
-      background-color: rgba(0, 0, 0, 0.3);
+      padding-top: 50px;
+
   }
   #currentTemp{
     font-size: 2.5rem;
@@ -82,28 +83,32 @@ html {
   #right{
     position: absolute;
     right: 5px;
-    width: 30%;
+    width: 15%;
     height: 100%;
     padding: 30px;
+    padding-top: 50px;
+
 
   }
   .info{
     display: flex;
     padding: 10px;
     justify-content: flex-end;
-    background-color: rgba(0, 0, 0, 0.3);
+
 
   }
   .infoBox{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 50%;
+
   }
   .infoIcon{
     display: flex;
-    width: 20%;
+    width: 50%;
     justify-content: center;
     align-items: center;
+
   }
   #bot{
     display: flex;
