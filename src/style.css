@@ -182,6 +182,9 @@ html {
     align-items: center;
 
   }
+  .fa-solid{
+    transform: scale(1.8);
+  }
   #bot{
     display: flex;
     flex-direction: column;

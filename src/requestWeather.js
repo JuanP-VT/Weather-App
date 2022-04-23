@@ -1,3 +1,4 @@
+import displayWeather from './displayWeather';
 import geoCoder from './geoCoder';
 import locationWeatherAPI from './locationWeatherAPI';
 
@@ -10,7 +11,7 @@ async function requestWeather(e) {
   const placeData = await geoCoder(userInput);
   // Call OpenWeather APIs for location info
   const myJson = await locationWeatherAPI(placeData);
-  console.log(myJson);
+  displayWeather(myJson);
 }
 
 export default requestWeather;
