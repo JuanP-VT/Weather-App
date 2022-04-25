@@ -3,7 +3,14 @@ import getHumanDate from './getHumanDate';
 export default function displayDailyForecast(myForecast) {
   console.log(myForecast);
   const $hourlyForecast = document.querySelector('#dailyForecast');
+  if ($hourlyForecast.firstChild) {
+    while ($hourlyForecast.firstChild) {
+      $hourlyForecast.removeChild($hourlyForecast.firstChild);
+    }
+  }
+
   myForecast.forEach((item) => {
+    // Clear hourly forecast screen
     // Create card for each item
     const card = document.createElement('div');
     card.classList.add('card');
