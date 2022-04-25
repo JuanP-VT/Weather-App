@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForeCast</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/f6bcbfcfce.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        </style>
+<script defer src="bundle.js"></script></head>
+<body>
+ <div id="main">
+     <div id="top">
+         <div id="left">
+             <div id="condition" class="big"> condition</div>
+             <div id="place">place</div>
+             <div id="date" class="small"> date of fetch</div>
+             <div id="currentHour" class="small"> Hour</div>
+             <div id="currentTemp" class="big"> CurrentTemp</div>
+             <div id="tempIcon"></div>
+             <form id="search">
+                <div id="inputDiv">
+                    <input type="text" id="userInput" placeholder="Search Location" class="small">
+                    <i class="fa-solid fa-magnifying-glass" id="lupa"></i>
+                </div>
+                <button type="submit" class="button-85"  id="submit">Search</button>
+             </form>
+          
+         </div>
+         <div id="right">
+             <div class="info">
+                 <div id="feelsLikeIcon" class="infoIcon"><i class="fa-solid fa-face-grin-beam-sweat"></i></div>
+                 <div class="infoBox">
+                     <div class="small"> Feels Like</div>
+                     <div id="feelsLike" class="big"> 0C</div>
+                 </div>
+             </div>
+
+             <div class="info">
+                <div id="minTemp" class="infoIcon">  <i class="fa-solid fa-temperature-arrow-down"></i> </div>
+                <div class="infoBox">
+                    <div class="small">Min temp</div>
+                    <div class="big" id="minTempValue"> 0%</div>
+                </div>
+            </div>
+            <div class="info">
+                <div id="maxTemp" class="infoIcon">   <i class="fa-solid fa-temperature-arrow-up"></i> </div>
+                <div class="infoBox">
+                    <div class="small">Min temp</div>
+                    <div class="big" id="maxTempValue"> 0%</div>
+                </div>
+            </div>
+            <div class="info">
+                <div id="humidityIcon" class="infoIcon"> <i class="fa-solid fa-droplet"></i></div>
+                <div class="infoBox">
+                    <div class="small">Humidity</div>
+                    <div class="big" id="humidityValue"> 0%</div>
+                </div>
+            </div>
+            <div class="info">
+                <div id="windSpeed" class="infoIcon">  <i class="fa-solid fa-wind"></i></div>
+                <div class="infoBox">
+                    <div class="small">Wind Speed</div>
+                    <div class="big" id="windSpeedValue"> 0<span class="small">km/h</span></div>
+                </div>
+            </div>
+         </div>
+     </div>
+     <div id="bot">
+         <div class="small">Daily Forecast</div>
+         <div id="dailyForecast"> </div>
+     </div>
+ </div>
+</body>
+</html>
