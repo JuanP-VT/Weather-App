@@ -21,6 +21,10 @@ function displayWeather(myJson) {
   const $currentTemp = document.querySelector('#currentTemp');
   $currentTemp.textContent = `${myJson.main.temp}°C`;
   const $tempIcon = document.querySelector('#tempIcon');
+  // delete icon if $tempIcon already has one
+  if ($tempIcon.firstChild) {
+    $tempIcon.removeChild($tempIcon.firstChild);
+  }
   const iconRef = myJson.weather[0].icon;
   const tempIcon = new Image();
   tempIcon.src = `http://openweathermap.org/img/wn/${iconRef}.png`;
@@ -35,6 +39,6 @@ function displayWeather(myJson) {
   const $humidity = document.querySelector('#humidityValue');
   $humidity.textContent = `${myJson.main.humidity}%`;
   const $windSpeed = document.querySelector('#windSpeedValue');
-  $windSpeed.textContent = `${myJson.wind.speed}`;
+  $windSpeed.textContent = `${myJson.wind.speed} Km/h`;
 }
 export default displayWeather;
