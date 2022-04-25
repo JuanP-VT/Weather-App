@@ -59,15 +59,17 @@ html {
     align-items: center;
   }
   #mainIcon{
-  transform: scale(2);
+  transform: scale(1.5);
   }
   #inputDiv{
     position: relative;
+    height: 40%;
   }
   #userInput{
+    position: absolute;
+    height: 100%;
     padding: 5px;
     width: 30%;
-
     border: none;
     color: whitesmoke;
     outline: none;
@@ -75,7 +77,6 @@ html {
     margin-left: 15px;
     width: 60%;
     background-color: rgba(250, 245, 245, 0.5);
-    margin-bottom: 15px;
   }
   ::placeholder{
     color: whitesmoke;
@@ -84,12 +85,13 @@ html {
   #lupa{
     position: absolute;
     left: 55%;
-    top: 20%;
+    bottom: 10%;
     transform: scale(0.8);
     color: black;
   }
 
 .button-85 {
+  margin-top: 20px;
   transform: scale(0.6);
   padding: 0.6em 2em;
   border: none;
