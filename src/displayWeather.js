@@ -27,6 +27,7 @@ function displayWeather(myJson) {
   }
   const iconRef = myJson.weather[0].icon;
   const tempIcon = new Image();
+  tempIcon.id = 'mainIcon';
   tempIcon.src = `http://openweathermap.org/img/wn/${iconRef}.png`;
   $tempIcon.append(tempIcon);
   // Right panel

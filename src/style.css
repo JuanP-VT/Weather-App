@@ -2,9 +2,10 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-size: 0.9vw;
+    font-size: 1vw;
     font-family: 'Roboto', sans-serif;
     color: whitesmoke;
+    /* outline: white solid 1px; */
 }
 .small{
     font-size: 0.8rem;
@@ -41,12 +42,13 @@ html {
       position: absolute;
       left: 5px;
       height: 100%;
-      width: 30%;
+      width: 25%;
       padding: 30px;
       padding-top: 50px;
 
   }
   #currentTemp{
+    text-align: center;
     font-size: 2.5rem;
     margin-top: 50px;
   }
@@ -56,17 +58,24 @@ html {
     justify-content: center;
     align-items: center;
   }
+  #mainIcon{
+  transform: scale(2);
+  }
   #inputDiv{
     position: relative;
   }
   #userInput{
     padding: 5px;
     width: 30%;
-    background-color: transparent;
+
     border: none;
-    border-bottom: 1px solid white;
     color: whitesmoke;
     outline: none;
+    border-radius: 10px;
+    margin-left: 15px;
+    width: 60%;
+    background-color: rgba(250, 245, 245, 0.5);
+    margin-bottom: 15px;
   }
   ::placeholder{
     color: whitesmoke;
@@ -74,10 +83,10 @@ html {
   }
   #lupa{
     position: absolute;
-    left: 25%;
-    top: 10%;
+    left: 55%;
+    top: 20%;
     transform: scale(0.8);
-    color: white;
+    color: black;
   }
 
 .button-85 {
