@@ -1,4 +1,4 @@
-# Restaurant Page
+# Weather App
 
 ## What is this ?
 
